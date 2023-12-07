@@ -423,30 +423,6 @@ header {
     overflow: hidden;
   }
 
-  #header-menu .download {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px; 
-    margin-bottom: 20px; 
-    overflow: hidden;
-  }
-
-  #header-menu .download .btn {
-    display: inline-flex;
-    border: 1px solid var(--color-400);
-    border-radius: 10px;
-    padding: 15px; 
-  }
-
-  #header-menu .download .btn:hover {
-   background-color: var(--color-200);
-  }
-
-  #header-menu .download img {
-    width: auto;
-    height: 15px;
-  }
-
   @media (min-width: 992px) {
     .header-menu__extra {
       flex-direction: row;

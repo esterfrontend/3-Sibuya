@@ -1,12 +1,12 @@
 /* INSTAGRAM */
 
 #instagram {
-  margin-top: 200px;
+  margin-top: 100px;
   margin-bottom: 100px;
 }
 
 .instagram__title {
-  font-size: 4rem;
+  font-size: 2.3rem;
   margin-bottom: 30px;
 }
 
@@ -57,6 +57,10 @@
 }
 
 @media (min-width: 576px) {
+  .instagram__title {
+    font-size: 4rem;
+  }
+
   .instagram__user i {
     font-size: 2rem;
   }
@@ -79,6 +83,10 @@
 }
 
 @media (min-width: 992px) {
+  #instagram {
+    margin-top: 200px;
+  }
+
   .instagram__header {
     display: flex;
     justify-content: space-between;
