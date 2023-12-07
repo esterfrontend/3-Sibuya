@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('/fonts/icomoon.eot');
+  src:
+    url('/fonts/icomoon.eot#iefix') format('embedded-opentype'),
+    url('/fonts/icomoon.ttf') format('truetype'),
+    url('/fonts/icomoon.woff') format('woff'),
+    url('/fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+:root {
+  --bs-font-sans-serif: "acumin-pro",sans-serif;
+  --font-highlight: "bebas-neue-pro",sans-serif;
+  --font-icon: 'icomoon', sans-serif !important;
+}
+
+
+body, h1, p, a, button, 
+.btn {
+  font-family: var(--bs-font-sans-serif);
+  font-weight: 200;
+}
+
+h2,
+[class*="claim"], 
+.header-menu__item-link,
+.mobile-button,
+.carousel-text {
+  font-family: var(--font-highlight);
+  font-weight: 600;
+  line-height: 1em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+[class^="icon-"] {
+  font-family: var(--font-icon);
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-card::before {
+  content: "\e900";
+}
+
+.icon-chopstick1::before {
+  content: "\e901";
+}
+
+.icon-chopstick2::before {
+  content: "\e902";
+}
+
+.icon-crossed::before {
+  content: "\e903";
+}
+
+.icon-facebook::before {
+  content: "\e904";
+}
+
+.icon-instagram::before {
+  content: "\e905";
+}
+
+.icon-linkedin::before {
+  content: "\e906";
+}
+
+.icon-message::before {
+  content: "\e907";
+}
+
+.icon-motorcycle::before {
+  content: "\e908";
+}
+
+.icon-twitter::before {
+  content: "\e909";
+}
+
+.icon-whatsapp::before {
+  content: "\e90a";
+}
+
+.icon-twitternew::before {
+  content: "\e90b";
+}
+
+.icon-tiktok::before {
+  content: "\e90c";
+}

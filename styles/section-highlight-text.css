@@ -1,0 +1,27 @@
+.carousel-text {
+    color: var(--color-300);
+    display: inline-flex;
+    align-items: center;
+    gap: 40px;
+    animation: infiniteScroll 40s linear infinite;
+}
+
+.carousel-text span {
+    font-size: 3.5rem;
+    width: max-content;
+}
+
+.carousel-text i {
+    font-size: 1.85rem;
+    width: max-content;
+}
+
+@media (min-width: 992px) {
+    .carousel-text span {
+        font-size: 12.5rem;
+    }
+    
+    .carousel-text i {
+        font-size: 6rem;
+    }
+}

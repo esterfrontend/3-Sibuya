@@ -1,0 +1,40 @@
+.content {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.content .row {
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.content .col {
+    width: 100%;
+    max-width: 530px;
+    padding: 0;
+}
+
+.content .content__text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.content h2 {
+    font-size: 3.8rem;
+    margin-bottom: 50px;
+}
+
+.content .btn {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+#information h2, 
+#information p {
+    width: 100%;
+    max-width: 450px;
+}
