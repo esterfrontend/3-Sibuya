@@ -1,3 +1,8 @@
+#highlight-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .carousel-text {
     color: var(--color-300);
     display: inline-flex;
@@ -8,6 +13,7 @@
 
 .carousel-text span {
     font-size: 3.5rem;
+    line-height: 1em;
     width: max-content;
 }
 
@@ -17,6 +23,11 @@
 }
 
 @media (min-width: 992px) {
+    #highlight-text {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
     .carousel-text span {
         font-size: 12.5rem;
     }
