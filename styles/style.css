@@ -118,6 +118,12 @@ h2 {
 
 
 /* BUTTONS */
+.btn:active:focus-visible,
+.btn:focus-visible {
+  background-color: var(--color-white);
+  border-color: var(--color-white);
+  box-shadow: none !important;
+}
 
 .btn-primary {
   position: relative;
@@ -224,25 +230,40 @@ img {
 /* Fixed buttons */
 
 #fixed-buttons {
-  position: fixed;
-  right: 10px;
-  bottom: 20px;
-  display: inline-flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 20px;
-  opacity: 0;
-  transform: translateY(100px);
-  animation: introButtonsLoad 2s ease-in-out 3s forwards;
+  position: relative;
+  pointer-events: none; 
   z-index: 3;
 }
 
 #fixed-buttons .btn {
+  position: fixed;
   width: 50px;
   height: 50px;
   padding: 12px;
-  transform: scale(1);
+  opacity: 0;
+  transform: scale(1) translateY(100px);
   transition: transform 0.2s ease-in-out;
+  animation: introButtonsLoad 2s ease-in-out 3s forwards;
+  pointer-events: all;
+}
+
+#fixed-buttons .btn:hover {
+  transform: scale(1.1);
+}
+
+#fixed-buttons .whatsapp {
+  bottom: 100px;
+  right: 20px;
+}
+
+#fixed-buttons .chatbot {
+  bottom: 20px;
+  left: 20px;
+}
+
+#fixed-buttons .more {
+  bottom: 20px;
+  right: 20px;
 }
 
 #fixed-buttons svg {
@@ -251,8 +272,21 @@ img {
   height: 100%;
 }
 
-#fixed-buttons .btn:hover {
-  transform: scale(1.1);
+#fixed-buttons .more span {
+  position: absolute;
+  width: 26px;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  background-color: var(--color-black);
+}
+
+#fixed-buttons .more span:first-child {
+  transform: translate(-50%, -50%);
+}
+
+#fixed-buttons .more span:last-child {
+  transform: translate(-50%, -50%) rotate(90deg);
 }
 
 .download {
@@ -277,4 +311,12 @@ img {
 .download img {
   width: auto;
   height: 15px;
+}
+
+
+@media (min-width: 992px) {
+  #fixed-buttons .chatbot {
+    right: 20px;
+    left: inherit;
+  }
 }

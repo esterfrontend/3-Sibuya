@@ -1,6 +1,8 @@
 header {
+  position: relative;
   padding: 17px 15px;
   margin: 0;
+  z-index: 4;
 }
 
 @media (min-width: 992px) {
@@ -224,9 +226,9 @@ header {
   }
   
   #header-menu.show::before {
-    width: 100vh;
-    height: 100vh;
-    transform: scale(3);
+    width: 120vh;
+    height: 120vh;
+    transform: scale(2.6); 
     transition: all 1s ease-in-out;
   }
 
@@ -257,7 +259,7 @@ header {
     display: inline-flex;
     align-items: center;
     color: var(--color-white);
-    padding: 0;
+    padding: 10px 0;
   }
 
   #header-menu .mobile-button span {

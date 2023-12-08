@@ -3,6 +3,7 @@ footer {
     background-color: var(--color-super-black);
     padding-top: 60px;
     padding-bottom: 20px;
+    z-index: 1;
 }
 
 .footer__nav {
@@ -94,6 +95,11 @@ footer .download {
     filter: grayscale(1) invert(1);
 }
 
+footer .copyright {
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
 
 @media (min-width: 767px) {
     footer {
@@ -128,14 +134,18 @@ footer .download {
 }
 
 @media (min-width: 992px) {
-    .footer__nav {
+    footer .container {
         width: 70% !important;
+        margin-top: 0;
+    }
+
+    .footer__nav {
         margin-top: 0;
     }
 }
 
 @media (min-width: 1500px) {
-    .footer__nav {
+    footer .container {
         width: 100% !important;
     }
 

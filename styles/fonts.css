@@ -48,14 +48,6 @@ h2,
   content: "\e900";
 }
 
-.icon-chopstick1::before {
-  content: "\e901";
-}
-
-.icon-chopstick2::before {
-  content: "\e902";
-}
-
 .icon-crossed::before {
   content: "\e903";
 }
@@ -70,10 +62,6 @@ h2,
 
 .icon-linkedin::before {
   content: "\e906";
-}
-
-.icon-message::before {
-  content: "\e907";
 }
 
 .icon-motorcycle::before {
